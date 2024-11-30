@@ -102,6 +102,18 @@ local requarnzLibrary = {
 			InputBackground = Color3.fromRGB(31, 159, 71),
 			InputStroke = Color3.fromRGB(19, 65, 31),
 			PlaceholderColor = Color3.fromRGB(178, 178, 178)
+                       Looper.RenderStepped:Connect(function()
+    local theme = requarnzLibrary.Theme.RGB
+    theme.Background = rgb(5, 0.5)
+    theme.Topbar = rgb(2, 0.7)
+    theme.Shadow = rgb(3, 0.4)
+    theme.NotificationBackground = rgb(2, 0.5)
+    theme.TabBackground = rgb(4, 0.6)
+    theme.TabStroke = rgb(4, 0.4)
+    theme.ElementBackground = rgb(3, 0.5)
+    theme.SliderProgress = rgb(5, 0.7)
+    theme.ToggleEnabled = rgb(4, 0.6)
+    theme.ToggleEnabledOuterStroke = rgb(3, 0.7)
 		},
 		Light = {
 			TextFont = "Gotham",  -- Default will use the various font faces used across requarnz
